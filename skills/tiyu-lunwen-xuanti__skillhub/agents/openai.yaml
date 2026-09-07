@@ -1,0 +1,4 @@
+interface:
+  display_name: "体育论文选题"
+  short_description: "从真实经历和现实问题中找到可研究、能落地的体育论文题目"
+  default_prompt: "请使用 $tiyu-lunwen-xuanti，根据我的专业经历、研究条件和现实问题，帮我找到并优化一个真正可做的体育论文题目。"
