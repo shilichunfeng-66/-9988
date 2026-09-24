@@ -1,15 +1,17 @@
-# 论文工作区（独立板块 · v1）
+# 论文工作区（独立板块 · v2）
 
-> 定位：只做**论文**的独立工作区。申报书/大创/教师科研等内容未带入。
+> 定位：只做**论文**的独立工作区。申报书/大创/教师科研等项目类 skill 已于 2026-09-24 **彻底移除、不留痕迹**。
 > 来源：2026-09-05 从 D:/科研文件 主工作区剥离复制，论文相关部分保证完整。
+
+> **乐动微伴工作室内部专属，禁止外传。**
 
 ## :lock: 使用授权声明（最高优先级）
 
-**本工作区全部内容（11 个 skill、流程与规范文件）仅供乐动微伴工作室成员内部使用；不得商用，不得私自转让、转借或分发。**
+**本工作区全部内容（7 个 skill、流程与规范文件）仅供乐动微伴工作室成员内部使用；不得商用，不得私自转让、转借或分发。**
 
 - 用户**第一次使用或访问**本工作区任意 skill 时，助手默认向用户**提示本声明一次**，提示后在 `D:\论文工作区\.声明已确认` 写入标记；
 - 标记存在后，正式使用中**不再重复提示**；
-- 声明全文见 `使用声明.md`；同一声明块已注入全部 11 个 skill 的 SKILL.md 顶部（frontmatter 之后第一位），优先级高于其余一切内容。
+- 声明全文见 `使用声明.md`；同一声明块已注入全部 skill 的 SKILL.md 顶部（frontmatter 之后第一位），优先级高于其余一切内容。
 
 ## 目录结构
 
@@ -27,24 +29,22 @@ D:/论文工作区/
 ├── reference-db\
 │   └── project-types\
 │       └── 论文.md                  ← 论文类型参考数据（思考方向）
-└── skills\                          ← 复制的 11 个 skill（原样完整）
+└── skills\                          ← 7 个论文相关 skill
 ```
 
-## ✅ 复制的 Skill 清单（6 + 5 = 11 个）
+## ✅ Skill 清单（2 + 5 = 7 个，2026-09-24 清理后）
 
 | # | Skill | 论文中的作用 |
 |---|-------|-------------|
-| 1 | **research-project-orchestrator** | 主调度：论文触发与流程、博士水准分析、标题构思、综述写法、学术写作8E+去AI味8F、文献检索铁律与关键词触发 |
-| 2 | **research-writing** | 论文英文环节：英文摘要(23-abstract)/中译英(01-zh2en)/英文润色(06)/英文去AI味(08)/投稿回复Rebuttal(26) 等 30 个 Prompt |
-| 3 | **humanizer** | 去AI味 v4.1：假靶子/空话大词/万能句式/机械三段式清理，L1-L4 自检，论文中文正文自然化 |
-| 4 | **research-quality-check** | 论文质检：学术规范（引用/数据）/内容逻辑/核心一致/时间逻辑校验 |
-| 5 | **research-project-thinking** | 博士水准思考：核心价值/深层意义/研究目的/实现难度/可解决关键点/解决路径 |
-| 6 | **research-school-formats** | 学校格式规范（论文若需按学校/期刊格式排版时取字体字号与结构规则） |
-| 7 | **academic-figures__skillhub** | 科研绘图：14 种图表（柱状/散点/热力/森林/KM/ROC 等）、Nature/Lancet 期刊预设、PDF 门禁 |
-| 8 | **research-academic-helper__skillhub** | 论文润色 / 文献综述生成 / 创新点提炼（中英双语，支持 PDF/DOC 上传） |
-| 9 | **kunlun-edu-research-agent__skillhub** | 文献综述框架 / 研究设计 checklist / IMRaD 论文结构与写作框架 / 投稿选刊 |
-| 10 | **arxiv-watcher** | ArXiv 文献检索与摘要（英文前沿文献补充源） |
-| 11 | **tiyu-lunwen-xuanti__skillhub** | 体育论文选题诊断（研究方向发现/题目优化/可行性分析；体育类论文用） |
+| 1 | **research-writing** | 论文写作主 skill：30 个 Prompt + 中文论文生成子流程（题目凝练/三轮研究探讨/IMRaD/评审预审/统计审查/体例）+ 英文全环节（摘要/中译英/润色/去AI味/Rebuttal） |
+| 2 | **humanizer** | 去AI味 v4.1：假靶子/空话大词/万能句式/机械三段式清理，L1-L4 自检，论文中文正文自然化 |
+| 3 | **academic-figures__skillhub** | 科研绘图：14 种图表（柱状/散点/热力/森林/KM/ROC 等）、Nature/Lancet 期刊预设、PDF 门禁 |
+| 4 | **research-academic-helper__skillhub** | 论文润色 / 文献综述生成 / 创新点提炼（中英双语，支持 PDF/DOC 上传） |
+| 5 | **kunlun-edu-research-agent__skillhub** | 文献综述框架 / 研究设计 checklist / IMRaD 论文结构与写作框架 / 投稿选刊 |
+| 6 | **arxiv-watcher** | ArXiv 文献检索与摘要（英文前沿文献补充源） |
+| 7 | **tiyu-lunwen-xuanti__skillhub** | 体育论文选题诊断（研究方向发现/题目优化/可行性分析；体育类论文用） |
+
+**已移除（2026-09-24，项目类 skill 清理）**：research-project-orchestrator（项目调度，含大创/教师科研线）、research-project-thinking（六类项目思考）、research-quality-check（项目质检，含经费/身份表）、research-school-formats（大创学校格式）。论文质检改由 `tools/check_doc.py` + `tools/style_metrics.py` 承担。
 
 **未复制**：research-plus（科研项目申报增强版，论文用不上）、各学校大创母版、申报书/中期/结题模板、outputs 历史产物。
 
@@ -59,10 +59,11 @@ D:/论文工作区/
 - v1（2026-09-05）：从主工作区剥离，6 skill + 论文参考数据 + 流程与检索规范。
 - v1.1（2026-09-05）：追加复制 5 个论文技能（合计 11 个，见下表）；2026-09-07 清单核对统一。
 - v1.2（2026-09-07）：加入使用授权声明（乐动微伴工作室专属/禁商用/禁转让，最高优先级）；声明注入 11 个 SKILL.md 顶部 + 主流程 + README；首次使用提示一次机制（`.声明已确认` 标记）。
+- v2（2026-09-24）：**移除 4 个项目类 skill**（orchestrator/thinking/quality-check/school-formats），全库清理大创/教师科研等项目痕迹；定位更新为「乐动微伴工作室内部专属，禁止外传」；skill 数 11 → 7。
 
 ## ✅ 补充清单：nature 系方法论的等价技能（2026-09-05 追加复制）
 
-> 说明：本机不存在名为 nature-* 的 skill（nature-figure/citation/polishing 等仅作为方法论规则集成在 research-project-orchestrator 内，已随其复制）。以下为功能等价的论文科研技能，已补拷（7-11 号已并入上方主清单）。
+> 说明：本机不存在名为 nature-* 的 skill（nature-figure/citation/polishing 等方法论已按规则集成在论文流程与工具链内）。以下为功能等价的论文科研技能，已补拷（3-7 号已并入上方主清单）。
 
 | # | Skill | 论文中的作用 |
 |---|-------|-------------|
