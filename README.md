@@ -7,7 +7,7 @@
 
 ## :lock: 使用授权声明（最高优先级）
 
-**本工作区全部内容（7 个 skill、流程与规范文件）仅供乐动微伴工作室成员内部使用；不得商用，不得私自转让、转借或分发。**
+**本工作区全部内容（8 个 skill、流程与规范文件）仅供乐动微伴工作室成员内部使用；不得商用，不得私自转让、转借或分发。**
 
 - 用户**第一次使用或访问**本工作区任意 skill 时，助手默认向用户**提示本声明一次**，提示后在 `D:\论文工作区\.声明已确认` 写入标记；
 - 标记存在后，正式使用中**不再重复提示**；
@@ -29,20 +29,23 @@ D:/论文工作区/
 ├── reference-db\
 │   └── project-types\
 │       └── 论文.md                  ← 论文类型参考数据（思考方向）
-└── skills\                          ← 7 个论文相关 skill
+└── skills\                          ← 8 个论文相关 skill
 ```
 
-## ✅ Skill 清单（2 + 5 = 7 个，2026-09-24 清理后）
+## ✅ Skill 清单（3 + 5 = 8 个，2026-09-25 新增专业版）
 
 | # | Skill | 论文中的作用 |
 |---|-------|-------------|
-| 1 | **research-writing** | 论文写作主 skill：30 个 Prompt + 中文论文生成子流程（题目凝练/三轮研究探讨/IMRaD/评审预审/统计审查/体例）+ 英文全环节（摘要/中译英/润色/去AI味/Rebuttal） |
-| 2 | **humanizer** | 去AI味 v4.1：假靶子/空话大词/万能句式/机械三段式清理，L1-L4 自检，论文中文正文自然化 |
-| 3 | **academic-figures__skillhub** | 科研绘图：14 种图表（柱状/散点/热力/森林/KM/ROC 等）、Nature/Lancet 期刊预设、PDF 门禁 |
-| 4 | **research-academic-helper__skillhub** | 论文润色 / 文献综述生成 / 创新点提炼（中英双语，支持 PDF/DOC 上传） |
-| 5 | **kunlun-edu-research-agent__skillhub** | 文献综述框架 / 研究设计 checklist / IMRaD 论文结构与写作框架 / 投稿选刊 |
-| 6 | **arxiv-watcher** | ArXiv 文献检索与摘要（英文前沿文献补充源） |
-| 7 | **tiyu-lunwen-xuanti__skillhub** | 体育论文选题诊断（研究方向发现/题目优化/可行性分析；体育类论文用） |
+| 1 | **research-writing-pro** ⭐ | **论文写作专业版（推荐）**：标准版全部能力 + 深度增强**默认启用**（三轮审核-返稿-重修 / 科研化描述 / 数据比对与性能支撑 / 达标度五维自评+提升路线）；审核用学位论文评审专家 × 方法学 × 领域双视角 |
+| 2 | **research-writing** | 论文写作标准版：30 个 Prompt + 中文论文生成子流程（题目凝练/三轮研究探讨/IMRaD/评审预审/统计审查/体例）+ 英文全环节（摘要/中译英/润色/去AI味/Rebuttal） |
+| 3 | **humanizer** | 去AI味 v4.1：假靶子/空话大词/万能句式/机械三段式清理，L1-L4 自检，论文中文正文自然化 |
+| 4 | **academic-figures__skillhub** | 科研绘图：14 种图表（柱状/散点/热力/森林/KM/ROC 等）、Nature/Lancet 期刊预设、PDF 门禁 |
+| 5 | **research-academic-helper__skillhub** | 论文润色 / 文献综述生成 / 创新点提炼（中英双语，支持 PDF/DOC 上传） |
+| 6 | **kunlun-edu-research-agent__skillhub** | 文献综述框架 / 研究设计 checklist / IMRaD 论文结构与写作框架 / 投稿选刊 |
+| 7 | **arxiv-watcher** | ArXiv 文献检索与摘要（英文前沿文献补充源） |
+| 8 | **tiyu-lunwen-xuanti__skillhub** | 体育论文选题诊断（研究方向发现/题目优化/可行性分析；体育类论文用） |
+
+**推荐用法**：默认用 `research-writing-pro`（专业版，增强全开）；需要轻量/快速出稿时用 `research-writing`（标准版）。
 
 **已移除（2026-09-24，项目类 skill 清理）**：research-project-orchestrator（项目调度，含大创/教师科研线）、research-project-thinking（六类项目思考）、research-quality-check（项目质检，含经费/身份表）、research-school-formats（大创学校格式）。论文质检改由 `tools/check_doc.py` + `tools/style_metrics.py` 承担。
 
@@ -60,6 +63,7 @@ D:/论文工作区/
 - v1.1（2026-09-05）：追加复制 5 个论文技能（合计 11 个，见下表）；2026-09-07 清单核对统一。
 - v1.2（2026-09-07）：加入使用授权声明（乐动微伴工作室专属/禁商用/禁转让，最高优先级）；声明注入 11 个 SKILL.md 顶部 + 主流程 + README；首次使用提示一次机制（`.声明已确认` 标记）。
 - v2（2026-09-24）：**移除 4 个项目类 skill**（orchestrator/thinking/quality-check/school-formats），全库清理大创/教师科研等项目痕迹；定位更新为「乐动微伴工作室内部专属，禁止外传」；skill 数 11 → 7。
+- v2.1（2026-09-25）：新增 **research-writing-pro（论文写作专业版）** —— 照搬 research-writing 全部内容 + 深度增强默认启用（三轮审核/科研化/数据支撑/达标自评）；skill 数 7 → 8。
 
 ## ✅ 补充清单：nature 系方法论的等价技能（2026-09-05 追加复制）
 
